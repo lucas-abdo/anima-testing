@@ -8,4 +8,4 @@ async def root():
 
 @app.get("/greet/")
 async def greet_user(username: str):
-    return {"message": f"Hello, {username}"}
+    return {"message": f"Hello, {username}!"}

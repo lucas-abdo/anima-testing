@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Check out code
-      uses: actions/checkount@v4
+      uses: actions/checkout@v4
     
     - name: Set up Node
       uses: actions/setup-node@v4
@@ -44,4 +44,3 @@ jobs:
       working-directory: frontend
       run: |
         npm test
-        

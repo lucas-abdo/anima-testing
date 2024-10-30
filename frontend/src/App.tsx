@@ -8,13 +8,20 @@ function App() {
   const handleClick = () => {
     setCount(count + 1);
   }
+  
+  const handleSubtract = () => {
+    setCount(count - 1);
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Button clicked {count} times</p>
+        <p>Button result: {count}</p>
         <button onClick={handleClick}>Click me</button>
+        <div>
+          <button onClick={handleSubtract}>Subtract</button>
+        </div>
       </header>
     </div>
   );
